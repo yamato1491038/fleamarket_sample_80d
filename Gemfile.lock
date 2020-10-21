@@ -309,11 +309,7 @@ DEPENDENCIES
   capistrano-rbenv
   capistrano3-unicorn
   capybara (>= 2.15)
-<<<<<<< HEAD
-  font-awesome-sass (~> 5.4.1)
-=======
   carrierwave
->>>>>>> 1054acc... form_and_active_hash_commit
   haml-rails (>= 1.0, <= 2.0.1)
   jbuilder (~> 2.7)
   listen (>= 3.0.5, < 3.2)
