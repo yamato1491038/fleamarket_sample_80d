@@ -67,6 +67,7 @@ gem 'ancestry'
 gem 'active_hash'
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'devise'
 
 group :production do
   gem 'unicorn'

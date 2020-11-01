@@ -5,15 +5,15 @@
     %li.Nav__content
       %i.fas.fa-angle-right
     %li.Nav__content
-      = link_to "レディース", "#"
+      = link_to "食べ物", "#"
     %li.Nav__content
       %i.fas.fa-angle-right
     %li.Nav__content
-      = link_to "トップス", "#"
+      = link_to "ラーメン", "#"
     %li.Nav__content
       %i.fas.fa-angle-right
     %li.Nav__content
-      = link_to "Tシャツ/カットソー(半袖/袖なし)", "#"
+      = link_to "豚骨ラーメン", "#"
     %li.Nav__content
       %i.fas.fa-angle-right
     %li.Nav__content
@@ -26,8 +26,12 @@
       .Topcontent
         .Items
           %h2.Items__name
-            テスト
-          .Items__imageall 
+            豚骨ラーメン
+          %button.Edit
+            商品情報の編集
+          %button.Edit
+            商品の削除
+          .Items__imageall
             %ul.Items__imageul
               %li.Items__imageli
                 = image_tag asset_path("food1.jpg")
@@ -36,14 +40,14 @@
                 = image_tag asset_path("food1.jpg")
           .Items__price
             %span.price
-              ¥10000
+              ¥1000
             .Items__pricedetail
               %span.Items__pricedetail__left
                 (税込)
               %span.Items__pricedetail__right
                 送料込み
           .Items__detail  
-            テストテストテストテストテストテスト
+            美味しい豚骨ラーメンです
           .Items__table
             %table.Table
               %tbody
@@ -51,30 +55,32 @@
                   %th.Table__left
                     出品者
                   %td.Table__right
-                    あああ
+                    ラーメンマニア
                 %tr.Table__content
                   %th.Table__left
                     カテゴリー
                   %td.Table__right 
-                    = link_to "レディース", "#"
+                    = link_to "食べ物", "#"
                     %br
-                    = link_to "トップス", "#"
+                    = link_to "ラーメン", "#"
                     %br
-                    = link_to "Tシャツ/カットソー（半袖/袖なし）", "#"
+                    = link_to "豚骨ラーメン", "#"
                     %br
                 %tr.Table__content
                   %th.Table__left
                     ブランド
                   %td.Table__right
+                    一蘭
                 %tr.Table__content
                   %th.Table__left
                     商品のサイズ
                   %td.Table__right
+                    並盛り
                 %tr.Table__content
                   %th.Table__left
                     商品の状態
                   %td.Table__right
-                    新品/未使用
+                    出来立て
                 %tr.Table__content
                   %th.Table__left
                     配送料の負担
@@ -100,6 +106,10 @@
                 = link_to "#" do
                   %i.fa.fa-flag
                   不適切な商品の通報
+          %br
+          .purchase
+            %button.purchasebutton
+              購入する
         .Topcontent__comments
           %ul.commentContents
             %textarea.comment
@@ -125,7 +135,7 @@
             %i.fa.fa-angle-right
         %ul.Links::after
       .Related
-        = link_to "レディースをもっと見る", "#"
+        = link_to "ラーメンをもっと見る", "#"
         .ProductLists
           .ProductList
-            = link_to image_tag asset_path("istockphoto-1235519143-1024x1024.jpg")
+            = link_to image_tag asset_path("food2.jpg")

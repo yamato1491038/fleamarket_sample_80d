@@ -38,7 +38,7 @@
 
 .Main {
   background-color: #f8f8f8;
-  height: 2020px;
+  height: 2200px;
   &__content {
     padding: 40px;
     margin: 0 auto;
@@ -194,6 +194,18 @@
         .fa-flag::before a{
           content: "\f005";
         }
+        .purchase {
+          text-align: center;
+        }
+        .purchasebutton {
+          margin-top: 20px;
+          font-size: 18px;
+          line-height: 60px;
+          background: #ea352d;
+          border: 1px solid #ea352d;
+          color: #fff;
+          width: 100%;
+        }
         }
         .Topcontent__comments {
           padding: 24px;
@@ -223,7 +235,6 @@
           border: 1px solid #3CCACE;
           color: #fff;
           width: 60%;
-          font-size: 18px;
           border-radius: 100px;
         }
       }
