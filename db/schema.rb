@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_01_102944) do
+ActiveRecord::Schema.define(version: 2020_10_28_151401) do
 
   create_table "product_images", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.bigint "product_id", null: false
@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 2020_11_01_102944) do
   create_table "products", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
     t.text "detail", null: false
-    t.integer "category_id"
+    t.integer "category_id", null: false
     t.integer "brand_id"
     t.integer "status_id", null: false
     t.integer "delivery_charge", null: false
@@ -36,6 +36,14 @@ ActiveRecord::Schema.define(version: 2020_11_01_102944) do
   end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.bigint "user_id"
+    t.index ["user_id"], name: "index_products_on_user_id"
+  end
+
+  create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "name", null: false
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"
@@ -48,4 +56,5 @@ ActiveRecord::Schema.define(version: 2020_11_01_102944) do
   end
 
   add_foreign_key "product_images", "products"
+  add_foreign_key "products", "users"
 end

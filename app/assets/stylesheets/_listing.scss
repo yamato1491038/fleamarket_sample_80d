@@ -13,6 +13,25 @@
     padding: 40px;
     background-color: white;
 
+    &__errors{
+      display: flex;
+      justify-content: center;
+      margin-bottom: 50px;
+
+      &__contents{
+
+        &__count{
+          font-size: 20px;
+          font-weight: bold;
+          color: red;
+        }
+
+        &__message{
+          color: red;
+        }
+      }
+    }
+
     .Listing-title{
       font-weight: 600;
     }
@@ -36,7 +55,8 @@
     }
 
     &__ListingImage{
-      padding-bottom: 40px;
+      margin-bottom: 50px;
+
       &__title{
         margin-bottom: 16px;
       }
@@ -78,12 +98,49 @@
             .file-field{
               display: none;
             }
+
+        &__field{
+          height: 150px;
+          width: 620px;
+          cursor: pointer;
+          
+
+          .js-file_group{
+            height: 140px;
+            width: 115px;
+            margin: 3px 0 0 3px;
+            padding: 30px 5px 0 5px;
+            border: 1px solid rgb(204,204,204);
+            font-size: 11px;
+            color: lightslategrey;
           }
           
+        }
+
+        #image-box{
+          background-color: rgb(245,245,245);
+          border-color: rgb(204,204,204);
+          height: 150px;
+          margin-top: 16px;
+          border: 1px dashed rgb(204,204,204);
+          overflow: hidden;
+          
+        }
+
+        .hidden-class{
+          display: none;
+        }
+
+        .hidden-input{
+          display: none;
         }
       }
     }
 
+    .file-field{
+      font-size: 10px;
+      display: none;
+    }
 
     &__ListingProduct{
       padding: 40px 0;
@@ -106,7 +163,6 @@
           font-size: 16px;
           border-color: #ccc;
         }
-        
       }
     }
 
@@ -259,3 +315,38 @@
     }
   }
 }
+
+
+
+.previews {
+  display: flex;
+  height: 170px;
+
+  .preview{
+    height: 148px;
+    width: 124px;
+    background-color: white;
+    padding: 0 6px;
+    border: 0.5px solid lightgrey;
+    
+
+    .img_box{
+      height: 118px;
+      
+      
+      .preview_image{
+        width: 110px;
+        height: 110px;
+        margin-top: 10px;
+        object-fit: cover;
+      }
+      .js-remove{
+        font-size: 12px;
+        color: blue;
+        text-align: center;
+        cursor: pointer;
+      }
+    }
+  }  
+}
+

@@ -51,6 +51,26 @@
     .Items {
       background-color: #fff;
       padding: 24px 40px 40px;
+      &__Edit {
+        display: flex;
+        justify-content: space-around;
+        font-weight: bold;
+        font-size: 24px;
+      }
+      .Edit__left {
+        font-weight: bold;
+        background: #3CCACE;
+        border: 1px solid #3CCACE;
+        color: #fff;
+        line-height: 50px;
+      }
+      .Edit__right {
+        font-weight: bold;
+        background: #ea352d;
+        border: 1px solid #ea352d;
+        color: #fff;
+        line-height: 50px;
+      }
       &__name {
         text-align: center;
         font-weight: bold;
