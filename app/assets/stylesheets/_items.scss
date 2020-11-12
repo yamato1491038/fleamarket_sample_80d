@@ -51,7 +51,7 @@
     .Items {
       background-color: #fff;
       padding: 24px 40px 40px;
-      &__Edit {
+      .Edit {
         display: flex;
         justify-content: space-around;
         font-weight: bold;
@@ -335,3 +335,4 @@
     width: 233px;
     height: 220px;
   }
+

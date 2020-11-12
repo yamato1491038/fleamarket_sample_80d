@@ -103,11 +103,13 @@
                   %i.fa.fa-flag
                   不適切な商品の通報
           %br
+        - if user_signed_in? && current_user.id == @product.user_id
           .Edit
-            %button.Edit__left
+            %button.Edit__left 
               商品情報の編集
-            %button.Edit__right
+            %button.Edit__right 
               商品の削除
+        - else
           .purchase
             %button.purchasebutton
               購入する
