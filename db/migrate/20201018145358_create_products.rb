@@ -7,11 +7,10 @@ class CreateProducts < ActiveRecord::Migration[6.0]
       t.integer :category_id, null:false
       t.integer :brand_id
       t.integer :status_id, null:false
-      t.integer :delivery_charge, null:false
+      t.integer :charge_id, null:false
       t.integer :prefecture_id, null:false
-      t.integer :delivery_date, null:false
+      t.integer :delivery_id, null:false
       t.integer :price, null:false
-      t.integer :user_id
       t.timestamps
     end
   end
